@@ -63,33 +63,5 @@ python3 src/build_html.py
 python3 src/build_pdf.py
 ```
 
----
-
-## 🔐 Seguridad y Variables de Entorno (`GEMINI_API_KEY`)
-
-Este repositorio está configurado para **no exponer nunca claves API ni rutas locales**:
-
-1. El archivo [`.gitignore`](.gitignore) bloquea automáticamente `.env`, `.env.*`, `*.key`, `*secret*`, `*api_key*` y `.gemini/`.
-2. Si deseas integrar llamadas a la API de Gemini en el futuro, copia la plantilla de ejemplo:
-   ```bash
-   cp .env.example .env
-   ```
-   y añade tu clave real únicamente dentro de `.env` (que Git ignorará por completo).
-
----
-
-## 🌐 Publicar en GitHub y GitHub Pages
-
-```bash
-git init
-git add .
-git commit -m "feat: add 6-max no-ante preflop interactive study and PDF generator"
-git branch -M main
-git remote add origin https://github.com/TU_USUARIO/six-max-preflop-study.git
-git push -u origin main
-```
-
-Para activar la web online gratis:
-1. Ve a **Settings → Pages** en tu repositorio de GitHub.
-2. En **Branch**, selecciona `main` y carpeta `/ (root)` y pulsa **Save**.
+a `main` y carpeta `/ (root)` y pulsa **Save**.
 3. Tu aplicación interactiva quedará publicada en `https://TU_USUARIO.github.io/six-max-preflop-study/`.
